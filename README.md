@@ -1,16 +1,39 @@
-# github_training_project
+# Student Tasks App
 
-A new Flutter project.
+A simple Flutter application created for Git and GitHub training.
 
-## Getting Started
+## Features
+- Simple and clean UI
+- Task cards display
+- Organized Flutter project structure
+- Git and GitHub workflow implementation
 
-This project is a starting point for a Flutter application.
+## Technologies Used
+- Flutter
+- Dart
+- Git
+- GitHub
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
+lib/
+├── screens/
+│ └── home_screen.dart
+├── widgets/
+└── main.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## GitHub Features Used
+- Repository Creation
+- Branches
+- Commits
+- Pull Requests
+- Issues
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+1. Clone the repository
+2. Run flutter pub get
+3. Run flutter run
+
+## Student Information
+Name: Sadi Harb
+Course: Field Training
+Specialization: Mobile Application Development
