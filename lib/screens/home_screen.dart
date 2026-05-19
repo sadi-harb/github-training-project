@@ -26,17 +26,36 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.all(16),
         child: ListView.builder(
           itemCount: tasks.length,
           itemBuilder: (context, index) {
-            return Card(
-              elevation: 4,
-              margin: const EdgeInsets.only(bottom: 12),
+            return Container(
+              margin: const EdgeInsets.only(bottom: 16),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade50,
+                borderRadius: BorderRadius.circular(16),
+              ),
               child: ListTile(
-                leading: const Icon(Icons.task),
-                title: Text(tasks[index]["title"]!),
-                subtitle: Text(tasks[index]["subtitle"]!),
+                contentPadding: const EdgeInsets.all(12),
+                leading: CircleAvatar(
+                  backgroundColor: Colors.blue,
+                  child: const Icon(
+                    Icons.task_alt,
+                    color: Colors.white,
+                  ),
+                ),
+                title: Text(
+                  tasks[index]["title"]!,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+                subtitle: Padding(
+                  padding: const EdgeInsets.only(top: 6),
+                  child: Text(tasks[index]["subtitle"]!),
+                ),
               ),
             );
           },
